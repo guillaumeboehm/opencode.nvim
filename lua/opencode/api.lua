@@ -505,6 +505,10 @@ function M.mcp()
   ui.render_lines(msg)
 end
 
+function M.current_model()
+    return state.current_model or ''
+end
+
 --- Runs a user-defined command by name.
 --- @param name string The name of the user command to run.
 --- @param args? string[] Additional arguments to pass to the command.
